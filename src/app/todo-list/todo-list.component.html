@@ -1,0 +1,31 @@
+<h2>Todo List</h2>
+<div *ngIf="tasks.length === 0">No tasks found.</div>
+<main>
+  <div id="main-container">
+    <ul>
+      <li *ngFor="let task of tasks">
+        <input type="checkbox" [(ngModel)]="task.completed" />
+        <span
+          [ngStyle]="{
+            'text-decoration': task.completed ? 'line-through' : 'none',
+            color: task.completed ? 'silver' : 'green',
+            'font-weight': 'bolder'
+          }"
+        >
+          {{ task.name }}
+        </span>
+        <span>
+          <button (click)="removeTsk(task)" class="remove-btns">Remove</button>
+        </span>
+      </li>
+    </ul>
+  </div>
+
+  <div id="add-task-form">
+    <span>Add Task</span>
+    <form (ngSubmit)="addTask(newTask.value); newTask.value = ''">
+      <input type="text" #newTask placeholder="New Task" required />
+      <button type="submit">Add Task</button>
+    </form>
+  </div>
+</main>

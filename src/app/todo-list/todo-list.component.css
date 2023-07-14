@@ -1,0 +1,87 @@
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 85vh;
+}
+
+#main-container {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #563d7c;
+    overflow-y: auto;
+}
+
+#main-container ul li {
+    border-bottom: 1px solid #d7d6d8;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-btns {
+    background-color: #ea2e3b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#add-task-form {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px #563d7c;
+}
+
+#add-task-form form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#add-task-form form input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #563d7c;
+    padding: 5px;
+}
+
+#add-task-form form button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #563d7c;
+    background-color: #563d7c;
+    color: white;
+    font-weight: bold;
+}
+
+h2 {
+    color: #563d7c;
+    margin-left: 20px;
+}
+
+li {
+    padding: 5px;
+    list-style: none;
+}
